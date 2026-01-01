@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./script/script.js"></script>
+</head>
+<body>
+     <header>
+          <img src="./images/game.png" alt="" onclick="window.location.href='/'">
+          <h1>Rock - Paper - Scissors - Lizard - Spock </h1>
+      </header>
+  <div class="container">
+
+        <div class="player-1">
+            <label for="">Player</label>
+            <div class="image" title="Rock">
+                <img src="images/icon-rock.svg" alt="Rock" onclick="bot_mode(this);">
+            </div>
+            <div class="image"  title="Paper">
+                <img src="images/icon-paper.svg" alt="Paper" onclick="bot_mode(this);">
+            </div>
+            <div class="image" title="Scissors">
+                <img src="images/icon-scissors.svg" alt="Scissors"  onclick="bot_mode(this);">
+            </div>
+            <div class="image"   title="Lizard">
+                <img src="images/icon-lizard.svg" alt="Lizard" onclick="bot_mode(this);">
+            </div>
+            <div class="image"   title="Spock">
+                <img src="images/icon-spock.svg" alt="Spock" onclick="bot_mode(this);">
+            </div>    
+        </div>
+
+        <div class="result">
+            <p style="color:white;">Rules</p>
+            <img src="images/image-rules-bonus.svg" alt="">
+            
+        </div>
+
+        <div class="computer">
+            <label for="">Computer</label>
+            <div class="image">
+                <img src="" alt="#" style="display: none;">
+            </div>
+            <p id="bot_res">Bot Response</p>
+        </div>
+    </div>
+     <div class="score">
+        <h1>Score</h1>
+        <p id="score">0</p>
+    </div>
+   
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+     <header>
+          <img src="./images/game.png" alt="" onclick="window.location.href='/'">
+          <h1>Rock - Paper - Scissors - Lizard - Spock </h1>
+      </header>
+  <div class="container">
+
+        <div class="player-1">
+            <label for="">Player - 1 </label>
+            <div class="image" title="Rock">
+                <img src="images/icon-rock.svg" alt="Rock" onclick="sendMove(this);">
+            </div>
+            <div class="image"  title="Paper">
+                <img src="images/icon-paper.svg" alt="Paper" onclick="sendMove(this);">
+            </div>
+            <div class="image" title="Scissors">
+                <img src="images/icon-scissors.svg" alt="Scissors"  onclick="sendMove(this);">
+            </div>
+            <div class="image"   title="Lizard">
+                <img src="images/icon-lizard.svg" alt="Lizard" onclick="sendMove(this);">
+            </div>
+            <div class="image"   title="Spock">
+                <img src="images/icon-spock.svg" alt="Spock" onclick="sendMove(this);">
+            </div>    
+        </div>
+
+        <div class="result-side">
+            <p style="color:white;">Score Board</p>
+            <p>Player - 1 Score</p>
+            <p id="p1-score" class="scores">0</p>
+            <p>Player - 2 Score</p>
+            <p id="p2-score" class="scores">0</p>
+            <!-- <img src="images/image-rules-bonus.svg" alt=""> -->
+            
+        </div>
+
+        <div class="computer">
+            <label for="">Player - 2</label>
+            <div class="image">
+                <img src="" alt="#" style="display: none;">
+            </div>
+            <p id="bot_res">Opponent Response</p>
+            <p id="status">click connect to play...</p>
+        </div>
+    </div>
+     <div class="score">
+          <button id="connect-btn">Connect</button>
+          <button id="quit-btn">ReStart</button>
+    </div>
+
+<script src="./socket.io/socket.io.js"></script>
+<script src="./script/client.js"></script>
+</body>
+
+</html>
